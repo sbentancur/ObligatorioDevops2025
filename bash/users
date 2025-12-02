@@ -1,0 +1,12 @@
+walter:Comentario usuario:/home/walter:SI:/bin/bash
+#white:comentario:/home/error:SI:/bin/sh
+
+gustavo::/home/gustavo:SI:/usr/bin/zsh
+root:repetido:/root:NO:/bin/bash
+elmaligno:::NO:
+guille:coment con espacios:/home/guille:NO:/bin/bash
+
+:newUser:/home/newUser:SI:/bin/bash
+
+
+
