@@ -30,7 +30,7 @@ while  [ $# -gt 0 ];do
 		-*) # Cualquier otro parametro es incorrecto.
 			echo "###### ERROR ######" >&2
 			echo "Flag '$1' invalida." >&2
-                        echo "###################" >&2
+			echo "###################" >&2
                         exit 2
 			;;
 		*) # Se espera como restante el archivo para la creacion del/los usuario/s

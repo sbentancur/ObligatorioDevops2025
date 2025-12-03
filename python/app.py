@@ -67,8 +67,7 @@ except ClientError as e:
 # S3 – CREAR BUCKET Y SUBIR APP
 # ============================
 BUCKET_NAME = "rrhh-app-bucket-obl-devops25"
-LOCAL_WEBAPP_PATH = "/home/admin/obli/python/ObligatorioDevops2025/webapp"
-LOCAL_INIT_SQL = "/home/admin/obli/python/ObligatorioDevops2025/init_db.sql"
+LOCAL_WEBAPP_PATH = "/home/admin/obli/python/ObligatorioDevops2025/python/webapp"
 
 s3 = boto3.client("s3")
 
@@ -96,11 +95,6 @@ def upload_folder_to_s3(folder_path, bucket, prefix=""):
 
 print("\n➡ Subiendo carpeta webapp/")
 upload_folder_to_s3(LOCAL_WEBAPP_PATH, BUCKET_NAME, prefix="webapp/")
-
-# Subir init_db.sql
-print("\n➡ Subiendo init_db.sql")
-s3.upload_file(LOCAL_INIT_SQL, BUCKET_NAME, "init_db.sql")
-print("📤 Subido: init_db.sql")
 
 print("\n✔ Archivos cargados en S3 correctamente.\n")
 
